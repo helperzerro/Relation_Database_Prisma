@@ -1,0 +1,36 @@
+GET http://localhost:5000/user
+
+###
+POST http://localhost:5000/addUser
+Content-Type: application/json
+
+{
+    "nama": "Anto"
+}
+
+###
+POST http://localhost:5000/addPost
+Content-Type: application/json
+
+{
+    "userId": "a5aaf964-97c8-4503-a4a8-560886552891",
+    "title":"Butiran Cinta",
+    "text":"Bagaimana kisah perjalanan"
+}
+
+
+###
+POST  http://localhost:5000/updatePost
+Content-Type: application/json
+
+{
+    "id": "40e1dff4-2984-45da-a9d7-c9ff39057a87",
+    "title":"Butiran Cinta 2",
+    "text":"Kemana kisah perjalanan"
+}
+
+###
+DELETE http://localhost:5000/deleteUser/b32f8332-b2d3-4980-9dc2-23d0f05ceedb
+
+###
+DELETE http://localhost:5000/deletePost/de00a194-685a-4a1e-8c9b-98b0c601b741
